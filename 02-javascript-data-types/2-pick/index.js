@@ -6,4 +6,15 @@
  */
 export const pick = (obj, ...fields) => {
 
+   let clone ={};
+
+      for (let i = 0; i < fields.length; i++) {
+         for (let key in obj) {
+
+               if (key == fields[i]) clone[key] = obj[key];
+         }
+      }
+      
+      return clone;
+
 };
