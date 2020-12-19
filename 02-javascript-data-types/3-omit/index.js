@@ -6,7 +6,7 @@
  */
 export const omit = (obj, ...fields) => {
     
-    let clone ={};
+    const clone ={};
 
     for (let [key, value] of Object.entries(obj) ) {
        
