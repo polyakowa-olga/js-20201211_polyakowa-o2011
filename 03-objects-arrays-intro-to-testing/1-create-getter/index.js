@@ -6,21 +6,19 @@
 export function createGetter(path) {
     return function  (obj) {
 
-        if (isEmpty(obj) === true) return undefined
+        if (isEmpty(obj)) return undefined
 
         const arrey = path.split('.');
        
-        let result= obj[arrey[0]];
+        let result = obj;
           
-        for (let i=0; i < arrey.length; i++) {
+        for (let i = 0; i < arrey.length; i++) {
           
-          if (i !== 0) {
             result = result[arrey[i]];
-          } 
          
         } 
 
-       return result  
+        return result  
 
        function isEmpty(obj) {
           for(let prop in obj) {
