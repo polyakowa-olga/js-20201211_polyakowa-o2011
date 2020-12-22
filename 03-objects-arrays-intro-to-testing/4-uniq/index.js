@@ -6,9 +6,9 @@
 export function uniq(arr) {
    
     if(Array.isArray(arr) === true) { 
-        return   [...new Set(arr)] ;
+     return   [...new Set(arr)] ;
       
-    } else   return []
+          } else   return []
         
      
 }
