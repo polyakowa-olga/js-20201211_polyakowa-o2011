@@ -25,5 +25,5 @@ export function trimSymbols(string, size) {
  
     let newStr = size === undefined ? string : newArr.join('')
   
-     return newStr
+      return newStr
 }
